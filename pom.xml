@@ -103,7 +103,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>engineer120 Nexus Repository </name>
-	      <url>http://18.119.132.45/repository/boa-snapshot/</url>
+	      <url>http://18.119.132.45:8081/repository/boa-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
