@@ -97,7 +97,7 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>engineer120 Releases Nexus Repository</name>
-	      <url>http://18.119.132.45:8081/repository/boa-release/</url>
+	      <url>http://18.19.132.45:8081/repository/boa-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
