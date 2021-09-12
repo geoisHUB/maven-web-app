@@ -4,8 +4,4 @@ COPY target/maven-web-application*.war /usr/local/tomcat/webapps/maven-web-appli
 #learning versioning
 #jenkins is good for learning engineer 
 #ci cd jobs 
-#engineers is good 
-#engineer is good
-#engineer is great
-#learn is good
-#jenkins is good
+
