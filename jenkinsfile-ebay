@@ -7,7 +7,7 @@ stage('1-Clone') {
    sh "${mavenHome}/bin/mvn clean package"  
   }
   stage('3-CodeQuality') {
-    //sh "${mavenHome}/bin/mvn sonar:sonar" 
+    sh "${mavenHome}/bin/mvn sonar:sonar" 
   }
   stage('4-UploadArticats') {
     //sh "${mavenHome}/bin/mvn deploy"
