@@ -13,6 +13,7 @@
 <h2 align="center"> Welcome to Bricelab Technology. 
 	Bricelab Technology is a an ideal online training  platform for DevOps and Cloud Engineers. 
 	We offer interview preparations and job assitance.
+	It is 100% job guarantie
 	The shout of the King is in our midst. His name is JESUS.  HE IS OUR SUCCESS ACCESS KEY</h2>
 <hr>
 <div style="text-align: center;">
