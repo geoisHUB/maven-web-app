@@ -6,3 +6,4 @@ COPY target/maven-web-application*.war /usr/local/tomcat/webapps/maven-web-appli
 you need to be patient
 what is the next step today
 work hard and enjoy your result
+devops is passioning
