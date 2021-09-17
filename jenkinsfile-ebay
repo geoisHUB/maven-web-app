@@ -13,7 +13,7 @@ stage('1-Clone') {
     sh "${mavenHome}/bin/mvn deploy"
   }
   stage('5-Deploy-UAT') {
-  deploy adapters: [tomcat9(credentialsId: 'tomcats-credential', path: '', url: 'http://18.218.193.157:8080/')], contextPath: null, war: 'target/*war'
+  deploy adapters: [tomcat9(credentialsId: 'tomcats-credential', path: '', url: 'http://172.31.30.176:8080/')], contextPath: null, war: 'target/*war'
    
    }
   stage('6-EmailNotification') {
@@ -28,6 +28,6 @@ build from ebay pipeline was succefull done by engineer120
   }
 }
 stage('prod-Deploy'){
-    deploy adapters: [tomcat9(credentialsId: 'tomcats-credential', path: '', url: 'http://18.218.193.157:8080/')], contextPath: null, war: 'target/*war'  
+    deploy adapters: [tomcat9(credentialsId: 'tomcats-credential', path: '', url: 'http://172.31.30.176:8080/')], contextPath: null, war: 'target/*war'  
 }
 }  
