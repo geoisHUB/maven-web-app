@@ -1,0 +1,20 @@
+node {
+    def mavenHome = tool name: 'maven3.8.2'
+    stage('CodeClone') {
+        git credentialsId: 'GITHUB-CRED', url: 'https://github.com/bristish/maven-web-application'
+    }
+    stage('mavenBuild') {
+        sh "${mavenHome}/bin/mvn clean package"
+    }
+    stage('CodeQuality') {
+      sh "${mavenHome}/bin/mvn sonar:sonar"  
+    }
+    stage('UploadArtifact') {
+        sh "${mavenHome}/bin/mvn deploy"
+    }
+    stage('DeployTomcat') {
+        deploy adapters: [tomcat9(credentialsId: 'Tomcat', path: '', url: 'http://54.163.153.183:8080/')], contextPath: null, war: 'target/*war'
+    }
+    stage('EmailNotification')
+    emailext body: 'Hello Engineers this Devops Brice', subject: 'build code', to: 'developers'
+}
