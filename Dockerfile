@@ -9,7 +9,3 @@ COPY target/maven-web-application*.war /usr/local/tomcat/webapps/maven-web-appli
 #we are enginee    
 #devops is amazing
 #great engineer
-#landmark engineer putting in work 
-#learning branch is great
-#engineer is good 
-#good
