@@ -7,5 +7,4 @@ COPY target/maven-web-application*.war /usr/local/tomcat/webapps/maven-web-appli
 #learning devops is good 
 #engineer is good
 #we are enginee    
-#devops is amazing
 
