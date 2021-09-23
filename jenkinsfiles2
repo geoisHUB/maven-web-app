@@ -6,6 +6,7 @@ node {
     stage('mavenBuild') {
         sh "${mavenHome}/bin/mvn clean package"
     }
+    /*
     stage('CodeQuality') {
       sh "${mavenHome}/bin/mvn sonar:sonar"  
     }
@@ -18,3 +19,4 @@ node {
     stage('EmailNotification')
     emailext body: 'Hello Engineers this Devops Brice', subject: 'build code', to: 'developers'
 }
+*/
