@@ -1,5 +1,5 @@
 node {
-    def mavenHome = tool name: 'maven3.6.2'
+    def mavenHome = tool name: 'maven3.5.2'
     stage('CodeClone') {
         git credentialsId: 'GITHUB-CRED', url: 'https://github.com/bristish/maven-web-application'
     }
